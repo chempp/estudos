@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+
+		
+
+	</style>
+
+	<script type="text/javascript">
+
+		function acionaCampo(){
+			
+			document.getElementById('campo').style.background = "yellow"
+		
+		}
+
+		function validaCampo(){
+			var valorCampo = document.getElementById ('campo').value 
+
+
+			if(valorCampo.length < 3){
+				document.getElementById('campo').style.background = "red"
+			}else{
+				document.getElementById('campo').style.background = "green"
+			}
+
+		}
+
+
+	</script>
+	<title></title>
+</head>
+
+<body>
+ 	
+ 	<input id="campo"  onfocus="acionaCampo()" onblur="validaCampo()" type="text">
+
+	
+</body>
+</html>
